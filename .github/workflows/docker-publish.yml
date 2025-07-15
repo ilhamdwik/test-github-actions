@@ -28,4 +28,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/test-github-actions:${{ github.sha }}
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/test-github-actions:${{ env.SHORT_SHA }}
